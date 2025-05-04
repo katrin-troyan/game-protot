@@ -1,0 +1,193 @@
+/* #region about */
+
+.about-title {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 240%;
+  text-align: center;
+  height: 60px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+    line-height: 150%;
+  }
+}
+
+.about-wrapper-one {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto 36px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px auto;
+  }
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144%;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 25px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    width: 411px;
+    height: 280px;
+  }
+}
+
+.about-img {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    border-radius: 20px;
+    width: 561px;
+    height: 293px;
+  }
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
+}
+
+.about-item {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 272px;
+  height: 150px;
+  backdrop-filter: blur(13px);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 15px 19.34px;
+
+  @media screen and (min-width: 1200px) {
+    width: 700px;
+    height: 100px;
+    padding: 10px 50px;
+  }
+}
+
+.about-item:nth-child(2) {
+  flex-direction: row-reverse;
+  background-color: rgba(233, 212, 255, 0.4);
+  gap: 20px;
+  padding: 8px 15.18px 10px 34px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    margin-left: auto;
+  }
+}
+
+.about-item:nth-child(3) {
+  background-color: rgba(255, 197, 120, 0.4);
+}
+
+.about-icons {
+  width: 80px;
+  height: 80px;
+}
+
+.about-text-list {
+  font-weight: 400;
+  font-size: 18px;
+  align-items: flex-start;
+}
+.about-wrapper-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 19.8px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.about-img-two {
+  width: 320.19px;
+  height: 123.2px;
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 20px;
+    width: 670px;
+    height: 258px;
+  }
+}
+.about-text-two {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144%;
+  width: 272px;
+  height: 115px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 25px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    width: 349px;
+    height: 210px;
+  }
+}
+
+.arrow:nth-child(2) {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .arrow:nth-child(2) {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .arrow-wrapper-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.arrow {
+  background-image: url('/img/game-atmosphere/award-mini.png');
+  background-size: cover;
+  background-position: center;
+  width: 270px;
+  height: 24px;
+  margin: 0 auto;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('/img/game-atmosphere/award-mini@2x.png');
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url('/img/game-atmosphere/awards-set.png');
+    width: 521px;
+    height: 112px;
+    margin: 0;
+  }
+  @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+    background-image: url('/img/game-atmosphere/awards-set@2x.png');
+  }
+}
+
+/* #endregion */

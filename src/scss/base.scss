@@ -1,0 +1,60 @@
+:root {
+  --font-text: 'Fredoka', sans-serif;
+  --font-tittle: 'Luckiest Guy', cursive;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #e3e0f0;
+  font-family: var(--font-text);
+}
+
+h1,
+h2 {
+  font-family: var(--font-tittle);
+}
+
+#about,
+#play,
+#features,
+#characters,
+#atmosphere,
+#reviews,
+#fqa {
+  padding-top: 65px;
+}
+@media only screen and (min-width: 1200px) {
+  #about,
+  #play,
+  #features,
+  #characters,
+  #atmosphere,
+  #reviews,
+  #fqa {
+    padding-top: 100px;
+  }
+}
+
+.container {
+  width: 320px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0 80px;
+  }
+}

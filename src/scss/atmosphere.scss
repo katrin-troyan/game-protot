@@ -1,0 +1,183 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+.game-atmosphere {
+  overflow: hidden;
+}
+
+.section-tittle {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+.section-data {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+.game-atm-text {
+  padding: 0 14.5px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 240px;
+    margin-bottom: 30px;
+  }
+}
+
+.game-atm-swiper {
+  width: 1040px;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-atm-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 506px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    height: 585px;
+    margin-bottom: 30px;
+  }
+}
+
+.game-atm-img {
+  width: 100%;
+  height: 506px;
+  object-fit: cover;
+  border-radius: 20px;
+
+  @media screen and (min-width: 1200px) {
+    height: 585px;
+  }
+}
+
+.custom-btn {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 62px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+.btn-prev,
+.btn-next {
+  width: 75px;
+  height: 75px;
+  border: 2px solid #6d12d8;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+  width: 84.5px;
+  height: 84.5px;
+  margin-top: -5px;
+}
+
+.btn-prev:hover .arrow-icon,
+.btn-next:hover .arrow-icon {
+  width: 31.66px;
+  height: 42.22px;
+}
+
+.arrow-icon {
+  width: 28px;
+  height: 37.5px;
+  transition: all 0.3s ease;
+}
+
+.atm-add-text {
+  padding: 0 2px;
+  text-align: center;
+  letter-spacing: 0.023em;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 150px;
+    margin-bottom: 30px;
+  }
+}
+
+.text-highlighted {
+  width: 100vw;
+  height: 246px;
+  margin-left: calc(-50vw + 50%);
+  margin-bottom: 26px;
+  background-color: #6d12d8;
+  border-radius: 10px;
+  text-align: center;
+  font-family: var(--font-tittle);
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 60px;
+  padding: 3px 36px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    height: 127px;
+    font-size: 30px;
+    padding: 7px 37px 0 47px;
+    margin: 0 0 4px 0;
+  }
+}
+
+.atm-sign {
+  background-image: url('/img/game-atmosphere/award-mini.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 24px;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('/img/game-atmosphere/award-mini@2x.png');
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('/img/game-atmosphere/awards-set.png');
+    width: 523.5px;
+    height: 112px;
+    margin-left: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+  .atm-sign {
+    background-image: url('/img/game-atmosphere/awards-set@2x.png');
+  }
+}
